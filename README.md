@@ -10,7 +10,8 @@ Pequena aplicação para geração de hash via interface de linha de comando.
 - Docker 🐳
 
 ## Requerimentos
-- Docker 🐳 instalado na máquina
+- Docker 🐳
+- PHP e Composer para dependências
 
 ## Instalação
 
