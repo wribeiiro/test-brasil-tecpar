@@ -36,7 +36,8 @@ $ cd ..
 $ docker-compose -f "./docker-compose.yml" up -d --build
 ```
 
-Em seguida verifique se o servidor está de pé http://localhost:8000/
+Em seguida verifique se o servidor está de pé http://localhost:8000/ 
+- Ao acessar o endereço, deve mostrar o seguinte texto `Lumen (8.3.1) (Laravel Components ^8.0)`
 
 # Endpoints
 
