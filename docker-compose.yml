@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  app:
+    container_name: php-test-brasil-tecpar
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: 'php-test-brasil-tecpar'
+    volumes:
+      - ./www/:/var/www/html
+    command: php -S 0.0.0.0:8000 -t public
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+      
+networks:
+  app-network:
+    driver: bridge
