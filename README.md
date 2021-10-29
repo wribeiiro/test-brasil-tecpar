@@ -2,7 +2,7 @@
 
 Pequena aplicação para geração de hash via interface de linha de comando.
 
-- A solução apresentada, foi pensada para ser simples e de fácil entendimento. Usado padrão `Repository` e `Service` para distribuir melhor suas responsabilidades, e ter um menor acoplamento das classes. Também foi utilizados recursos do próprio microframework Lumen como o tratamento no limite de requisições. O ponto chave do desenvolvimento, foi entender a lógica e implementação do cálculo e validação do hash. Para isso também foi criado alguns testes unitários, para garantir o funcionamento das funcionalidades.
+- A solução apresentada, foi pensada para ser simples e de fácil entendimento. Usado padrão `Repository` e `Service` para distribuir melhor suas responsabilidades, e ter um menor acoplamento das classes. Também foi utilizados recursos do próprio microframework Lumen como o tratamento no limite de requisições. O ponto chave do desenvolvimento, foi entender a lógica e implementação do cálculo e validação do hash. Para isso também foi criado alguns testes unitários, para garantir o comportamento correto das funcionalidades.
 
 ## Tecnologias
 - PHP / Lumen 🐘
