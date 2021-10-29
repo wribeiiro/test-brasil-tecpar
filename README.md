@@ -19,15 +19,20 @@ Clone este repositório
 ```bash
 $ git clone https://github.com/wribeiiro/test-brasil-tecpar
 ```
-Navegue até o diretório
+Navegue até o diretório 
 
 ```bash
-$ cd /test-brasil-tecpar
+$ cd /test-brasil-tecpar/www
+```
+Execute o seguinte comando para instalar as dependências
+
+```bash
+$ composer install
 ```
 
-Rode o seguinte comando para subir o container
-
+Em seguinda volta para a raiz do projeto, e execute o comando para subir o container
 ```bash
+$ cd ..
 $ docker-compose -f "./docker-compose.yml" up -d --build
 ```
 
@@ -43,7 +48,7 @@ Em seguida verifique se o servidor está de pé http://localhost:8000/
 
 `GET http://localhost:8000/api/v1/hashes`
 
-Retorna uma lista paginada com todos os hashes gerados.
+Retorna uma lista paginada no formato JSON com todos os hashes gerados.
 - Permite um parâmetro via query string para filtro `?attempts=1000`, onde o valor é de tentativas para encontrar a key.
 
 ### Response
@@ -113,10 +118,10 @@ $ winpty docker exec -it php-test-brasil-tecpar bash
 ```
 
 Em seguida execute o seguinte comando para a requisição onde:
-- `minha string feliz` é a string a ser "hasheada"
+- `minhastringfeliz` é a string a ser "hasheada"
 - `requests` o número de requisições que serão feitas em sequência
 ```bash
-$ php artisan hash:make `minha string feliz` --requests=`10`
+$ php artisan hash:make `minhastringfeliz` --requests=`10`
 ```
 
 O Resultado de cada requisição deve ser informada no console conforme abaixo:
